@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>+10.500 Prompts + 30 Robots de IA | Biblioteca completa</title>
+  <meta name="description" content="La biblioteca de prompts de IA más completa en español. Más de 10.500 prompts y 30 robots listos para usar en ChatGPT, Claude, Gemini y más. Actualizado 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====== HEADER ====== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo">
+        <span class="logo-bracket">[</span><span class="logo-text">PROMPTS</span><span class="logo-dot">.</span><span class="logo-ai">IA</span><span class="logo-bracket">]</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#benefits" data-i18n="nav.benefits"></a>
+        <a href="#catalog" data-i18n="nav.catalog"></a>
+        <a href="#robots" data-i18n="nav.robots"></a>
+        <a href="#faq" data-i18n="nav.faq"></a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch" id="langSwitch">
+          <button data-lang="es" class="active">ES</button>
+          <button data-lang="en">EN</button>
+        </div>
+        <a href="#pricing" class="btn btn-sm" data-i18n="nav.cta"></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="container hero-inner">
+      <span class="badge" data-i18n="hero.badge"></span>
+      <h1 class="hero-title" data-i18n="hero.title"></h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle"></p>
+      <div class="hero-cta">
+        <a href="#pricing" class="btn btn-primary btn-lg" data-i18n="hero.ctaPrimary"></a>
+        <a href="#benefits" class="btn btn-ghost btn-lg" data-i18n="hero.ctaSecondary"></a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-i18n="hero.stat1num"></span><span class="stat-label" data-i18n="hero.stat1label"></span></div>
+        <div class="stat"><span class="stat-num" data-i18n="hero.stat2num"></span><span class="stat-label" data-i18n="hero.stat2label"></span></div>
+        <div class="stat"><span class="stat-num" data-i18n="hero.stat3num"></span><span class="stat-label" data-i18n="hero.stat3label"></span></div>
+        <div class="stat"><span class="stat-num" data-i18n="hero.stat4num"></span><span class="stat-label" data-i18n="hero.stat4label"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TRUST / TOOLS ====== -->
+  <section class="trust">
+    <div class="container">
+      <p class="trust-title" data-i18n="trust.title"></p>
+      <div class="trust-marquee" id="trustTools"></div>
+    </div>
+  </section>
+
+  <!-- ====== BENEFITS ====== -->
+  <section class="benefits section" id="benefits">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="benefits.title"></h2>
+        <p data-i18n="benefits.subtitle"></p>
+      </div>
+      <div class="benefits-grid" id="benefitsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ====== CATALOG ====== -->
+  <section class="catalog section" id="catalog">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="catalog.title"></h2>
+        <p data-i18n="catalog.subtitle"></p>
+      </div>
+      <div class="catalog-grid" id="catalogGrid"></div>
+    </div>
+  </section>
+
+  <!-- ====== ROBOTS ====== -->
+  <section class="robots section" id="robots">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="robots.title"></h2>
+        <p data-i18n="robots.subtitle"></p>
+      </div>
+      <div class="robots-grid" id="robotsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ====== PRICING ====== -->
+  <section class="pricing section" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="pricing.title"></h2>
+        <p data-i18n="pricing.subtitle"></p>
+      </div>
+      <div class="price-card">
+        <span class="price-badge" data-i18n="pricing.badge"></span>
+        <h3 class="price-plan" data-i18n="pricing.planName"></h3>
+        <div class="price-amount">
+          <span class="price-old" data-i18n="pricing.priceOld"></span>
+          <span class="price-now" data-i18n="pricing.price"></span>
+          <span class="price-currency" data-i18n="pricing.currency"></span>
+        </div>
+        <p class="price-note" data-i18n="pricing.priceNote"></p>
+        <ul class="price-features" id="priceFeatures"></ul>
+        <a href="#" class="btn btn-primary btn-lg btn-block" id="buyButton" data-i18n="pricing.cta"></a>
+        <p class="price-guarantee" data-i18n="pricing.guarantee"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FAQ ====== -->
+  <section class="faq section" id="faq">
+    <div class="container container-narrow">
+      <div class="section-head">
+        <h2 data-i18n="faq.title"></h2>
+      </div>
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- ====== FINAL CTA ====== -->
+  <section class="final-cta">
+    <div class="container container-narrow">
+      <h2 data-i18n="finalCta.title"></h2>
+      <p data-i18n="finalCta.subtitle"></p>
+      <a href="#" class="btn btn-primary btn-lg" id="buyButton2" data-i18n="finalCta.button"></a>
+      <p class="final-note" data-i18n="finalCta.note"></p>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo"><span class="logo-bracket">[</span><span class="logo-text">PROMPTS</span><span class="logo-dot">.</span><span class="logo-ai">IA</span><span class="logo-bracket">]</span></span>
+        <p class="footer-legal" data-i18n="footer.legal"></p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4 data-i18n="footer.support"></h4>
+          <a href="https://wa.me/573189562677" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div>
+          <h4 data-i18n="footer.follow"></h4>
+          <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <span>© <span id="year"></span> Prompts.IA — <span data-i18n="footer.rights"></span></span>
+    </div>
+  </footer>
+
+  <!-- ====== STICKY MOBILE CTA ====== -->
+  <a href="#pricing" class="sticky-cta" data-i18n="nav.cta"></a>
+
+  <!-- ====== TOAST ====== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
