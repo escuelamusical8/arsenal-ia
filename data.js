@@ -109,7 +109,7 @@ const CONTENT = {
       copy: "copiar",
       copied: "✓",
       waButton: "Enviar comprobante por WhatsApp",
-      foot: "Te respondemos lo más rápido posible · Soporte 3189562677"
+      foot: "Te respondemos lo más rápido posible · Soporte 3112541324"
     },
     footer: {
       rights: "Todos los derechos reservados.",
@@ -224,7 +224,7 @@ const CONTENT = {
       copy: "copy",
       copied: "✓",
       waButton: "Send receipt on WhatsApp",
-      foot: "We reply as fast as possible · Support 3189562677"
+      foot: "We reply as fast as possible · Support 3112541324"
     },
     footer: {
       rights: "All rights reserved.",

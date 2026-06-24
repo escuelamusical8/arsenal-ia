@@ -4,7 +4,7 @@
 
 // ---- CONFIGURACIÓN ----
 // Tu WhatsApp Business (sin +, sin espacios). Aquí te llega el comprobante.
-const WHATSAPP = "573189562677";
+const WHATSAPP = "573112541324";
 // Mensaje que se escribe solo cuando el cliente toca el botón verde.
 const WA_MSG = {
   es: "Hola, acabo de pagar el Arsenal IA (20 USD / $80.000 COP). Aquí está mi comprobante:",
