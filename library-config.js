@@ -17,6 +17,8 @@ const CATS = [
   { id:"seo",          icon:"🔍", name:{ es:"SEO y blogs",           en:"SEO & blogs" } },
   { id:"video",        icon:"🎬", name:{ es:"Video y guiones",       en:"Video & scripts" } },
   { id:"personal",     icon:"🚀", name:{ es:"Marca personal",        en:"Personal brand" } },
+  { id:"education",     icon:"🎓", name:{ es:"Educación",             en:"Education" } },
+  { id:"health",       icon:"🩺", name:{ es:"Salud y bienestar",     en:"Health & wellness" } },
   { id:"agents",       icon:"🤖", name:{ es:"IA y Agentes",          en:"AI & Agents" } }
 ];
 
@@ -25,7 +27,8 @@ const CATS = [
 const ALL_PROMPTS = [].concat(
   typeof PROMPTS_1 !== "undefined" ? PROMPTS_1 : [],
   typeof PROMPTS_2 !== "undefined" ? PROMPTS_2 : [],
-  typeof PROMPTS_3 !== "undefined" ? PROMPTS_3 : []
+  typeof PROMPTS_3 !== "undefined" ? PROMPTS_3 : [],
+  typeof PROMPTS_4 !== "undefined" ? PROMPTS_4 : []
 );
 
 // ---- Textos del portal de acceso (bilingüe) ----

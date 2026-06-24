@@ -257,6 +257,34 @@ const CATEGORIES = [
     }
   },
   {
+    id: "education",
+    icon: "🎓",
+    count: 400,
+    name: { es: "Educación", en: "Education" },
+    desc: { es: "Planes de clase, exámenes, material para enseñar y estudiar.", en: "Lesson plans, tests, material to teach and study." },
+    sample: {
+      title: { es: "Plan de clase completo", en: "Complete lesson plan" },
+      prompt: {
+        es: "Actúa como experto en pedagogía. Crea un plan de clase completo sobre [TEMA] para estudiantes de [NIVEL/GRADO]. Incluye: objetivo de aprendizaje, conocimientos previos necesarios, introducción que enganche, desarrollo de la clase paso a paso con tiempos, una actividad práctica, materiales necesarios y forma de evaluar lo aprendido. Que sea dinámico y fácil de aplicar.",
+        en: "Act as a pedagogy expert. Create a complete lesson plan about [TOPIC] for [LEVEL/GRADE] students. Include: learning objective, required prior knowledge, an engaging introduction, step-by-step lesson development with timing, a hands-on activity, needed materials and a way to assess learning. Make it dynamic and easy to apply."
+      }
+    }
+  },
+  {
+    id: "health",
+    icon: "🩺",
+    count: 400,
+    name: { es: "Salud y bienestar", en: "Health & wellness" },
+    desc: { es: "Educación al paciente, hábitos saludables, gestión de consultorios.", en: "Patient education, healthy habits, clinic management." },
+    sample: {
+      title: { es: "Material educativo para pacientes", en: "Educational material for patients" },
+      prompt: {
+        es: "Actúa como comunicador en salud. Crea un material educativo claro y sencillo para explicar a pacientes qué es [CONDICIÓN/TEMA DE SALUD], en lenguaje fácil de entender, sin tecnicismos. Incluye: qué es, hábitos que ayudan, señales de cuándo consultar al médico y preguntas frecuentes. Importante: aclara que no reemplaza la consulta médica profesional.",
+        en: "Act as a health communicator. Create clear, simple educational material to explain to patients what [CONDITION/HEALTH TOPIC] is, in easy-to-understand language, without jargon. Include: what it is, helpful habits, signs of when to see a doctor and FAQs. Important: clarify it doesn't replace professional medical consultation."
+      }
+    }
+  },
+  {
     id: "marketing",
     icon: "📣",
     count: 1200,
