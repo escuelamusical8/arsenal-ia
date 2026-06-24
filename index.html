@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>+10.500 Prompts + 30 Robots de IA | Biblioteca completa</title>
+  <title>Arsenal IA — +10.500 Prompts, Robots y Agentes de IA</title>
   <meta name="description" content="La biblioteca de prompts de IA más completa en español. Más de 10.500 prompts y 30 robots listos para usar en ChatGPT, Claude, Gemini y más. Actualizado 2026." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a href="#top" class="logo">
-        <span class="logo-bracket">[</span><span class="logo-text">PROMPTS</span><span class="logo-dot">.</span><span class="logo-ai">IA</span><span class="logo-bracket">]</span>
+        <span class="logo-bracket">[</span><span class="logo-text">ARSENAL</span><span class="logo-dot">.</span><span class="logo-ai">IA</span><span class="logo-bracket">]</span>
       </a>
       <nav class="main-nav" id="mainNav">
         <a href="#benefits" data-i18n="nav.benefits"></a>
@@ -29,6 +29,7 @@
           <button data-lang="es" class="active">ES</button>
           <button data-lang="en">EN</button>
         </div>
+        <a href="acceso.html" class="header-login" id="headerLogin" data-i18n="nav.login"></a>
         <a href="#pricing" class="btn btn-sm" data-i18n="nav.cta"></a>
         <button class="menu-toggle" id="menuToggle" aria-label="Menu">
           <span></span><span></span><span></span>
@@ -145,7 +146,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="logo"><span class="logo-bracket">[</span><span class="logo-text">PROMPTS</span><span class="logo-dot">.</span><span class="logo-ai">IA</span><span class="logo-bracket">]</span></span>
+        <span class="logo"><span class="logo-bracket">[</span><span class="logo-text">ARSENAL</span><span class="logo-dot">.</span><span class="logo-ai">IA</span><span class="logo-bracket">]</span></span>
         <p class="footer-legal" data-i18n="footer.legal"></p>
       </div>
       <div class="footer-links">
@@ -160,12 +161,58 @@
       </div>
     </div>
     <div class="footer-bottom container">
-      <span>© <span id="year"></span> Prompts.IA — <span data-i18n="footer.rights"></span></span>
+      <span>© <span id="year"></span> Arsenal IA — <span data-i18n="footer.rights"></span></span>
     </div>
   </footer>
 
   <!-- ====== STICKY MOBILE CTA ====== -->
-  <a href="#pricing" class="sticky-cta" data-i18n="nav.cta"></a>
+  <a href="#" class="sticky-cta" id="stickyCta" data-i18n="nav.cta"></a>
+
+  <!-- ====== VENTANA DE PAGO ====== -->
+  <div class="pay-overlay" id="payOverlay" hidden>
+    <div class="pay-modal">
+      <button class="pay-close" id="payClose" aria-label="Cerrar">×</button>
+      <span class="pay-badge" data-i18n="pay.badge"></span>
+      <h2 class="pay-title" data-i18n="pay.title"></h2>
+      <div class="pay-price">
+        <span class="pay-price-now" data-i18n="pay.price"></span>
+        <span class="pay-price-cur" data-i18n="pay.currency"></span>
+      </div>
+      <p class="pay-sub" data-i18n="pay.sub"></p>
+
+      <div class="pay-steps">
+        <div class="pay-step"><span class="pay-step-num">1</span><span class="pay-step-text" data-i18n="pay.step1"></span></div>
+        <div class="pay-step"><span class="pay-step-num">2</span><span class="pay-step-text" data-i18n="pay.step2"></span></div>
+        <div class="pay-step"><span class="pay-step-num">3</span><span class="pay-step-text" data-i18n="pay.step3"></span></div>
+      </div>
+
+      <div class="pay-methods">
+        <p class="pay-methods-title" data-i18n="pay.methodsTitle"></p>
+        <div class="pay-method">
+          <span class="pay-method-name"><span class="pay-method-ico">🏦</span> Bancolombia <span class="pay-method-type" data-i18n="pay.savings"></span></span>
+          <span class="pay-method-val"><span class="pay-method-num">46619888359</span><button class="pay-copy" data-copy="46619888359"></button></span>
+        </div>
+        <div class="pay-method">
+          <span class="pay-method-name"><span class="pay-method-ico">💜</span> Nequi</span>
+          <span class="pay-method-val"><span class="pay-method-num">3212026859</span><button class="pay-copy" data-copy="3212026859"></button></span>
+        </div>
+        <div class="pay-method">
+          <span class="pay-method-name"><span class="pay-method-ico">❤️</span> Daviplata</span>
+          <span class="pay-method-val"><span class="pay-method-num">3212026859</span><button class="pay-copy" data-copy="3212026859"></button></span>
+        </div>
+        <div class="pay-method">
+          <span class="pay-method-name"><span class="pay-method-ico">🔑</span> Llave Bre-B</span>
+          <span class="pay-method-val"><span class="pay-method-num">3212026859</span><button class="pay-copy" data-copy="3212026859"></button></span>
+        </div>
+      </div>
+
+      <a href="#" class="btn-wa" id="payWhatsapp" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.03c-.24.68-1.2 1.25-1.97 1.41-.53.11-1.22.2-3.55-.76-2.98-1.23-4.9-4.26-5.05-4.46-.15-.2-1.22-1.62-1.22-3.09 0-1.47.77-2.19 1.04-2.49.27-.3.59-.37.79-.37.2 0 .39.001.56.01.18.008.42-.07.66.5.24.58.82 2.01.89 2.16.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.18-.31.4-.45.53-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.36 1.46.3.15.47.12.64-.07.17-.2.74-.86.94-1.16.2-.3.39-.25.66-.15.27.1 1.7.8 1.99.95.3.15.49.22.56.34.07.12.07.7-.17 1.38z"/></svg>
+        <span data-i18n="pay.waButton"></span>
+      </a>
+      <p class="pay-foot" data-i18n="pay.foot"></p>
+    </div>
+  </div>
 
   <!-- ====== TOAST ====== -->
   <div class="toast" id="toast"></div>

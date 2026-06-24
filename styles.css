@@ -115,6 +115,11 @@ body{
 .main-nav a:hover{ color:var(--cyan); }
 
 .header-actions{ display:flex; align-items:center; gap:14px; }
+.header-login{
+  color:var(--text-dim); text-decoration:none; font-size:.85rem; font-weight:500;
+  white-space:nowrap; transition:color .15s;
+}
+.header-login:hover{ color:var(--cyan); }
 .lang-switch{
   display:flex; border:1px solid var(--border-2); border-radius:8px; overflow:hidden;
   font-family:var(--font-mono);
@@ -259,6 +264,14 @@ body{
   content:''; position:absolute; bottom:0; left:0; right:0; height:40px;
   background:linear-gradient(transparent, var(--bg));
 }
+.cat-unlock{
+  display:block; margin-top:16px; text-align:center;
+  font-family:var(--font-display); font-size:.88rem; font-weight:600;
+  color:var(--cyan); background:rgba(46,230,214,.08);
+  border:1px solid rgba(46,230,214,.22); border-radius:var(--radius-sm);
+  padding:11px 14px; text-decoration:none; transition:all .15s;
+}
+.cat-unlock:hover{ background:rgba(46,230,214,.16); transform:translateY(-1px); }
 
 /* ---------- Robots ---------- */
 .robots-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
@@ -404,3 +417,65 @@ body{
 }
 
 :focus-visible{ outline:2px solid var(--cyan); outline-offset:3px; border-radius:4px; }
+
+/* ---------- Ventana de pago (modal) ---------- */
+.pay-overlay{
+  position:fixed; inset:0; background:rgba(5,8,16,.82);
+  backdrop-filter:blur(8px); display:flex; align-items:center; justify-content:center;
+  padding:20px; z-index:300;
+}
+.pay-overlay[hidden]{ display:none; }
+.pay-modal{
+  position:relative; width:100%; max-width:460px; max-height:92vh; overflow-y:auto;
+  background:linear-gradient(180deg,var(--bg-card-2),var(--bg-card));
+  border:1px solid var(--border-2); border-radius:22px; padding:34px 30px;
+  box-shadow:0 0 50px rgba(46,230,214,.15);
+}
+.pay-close{
+  position:absolute; top:16px; right:18px; background:none; border:none;
+  color:var(--text-mute); font-size:1.6rem; cursor:pointer; line-height:1;
+}
+.pay-close:hover{ color:var(--text); }
+.pay-badge{
+  display:inline-block; font-family:var(--font-mono); font-size:.72rem; font-weight:700;
+  color:#04201d; background:var(--cyan); padding:4px 12px; border-radius:100px;
+  margin-bottom:16px; text-transform:uppercase; letter-spacing:.05em;
+}
+.pay-title{ font-family:var(--font-display); font-size:1.5rem; font-weight:700; letter-spacing:-.02em; margin-bottom:6px; }
+.pay-price{ display:flex; align-items:baseline; gap:8px; margin-bottom:6px; flex-wrap:wrap; }
+.pay-price-now{ font-family:var(--font-display); font-size:2.4rem; font-weight:700; color:var(--cyan); }
+.pay-price-cur{ font-family:var(--font-mono); font-size:.85rem; color:var(--text-dim); }
+.pay-sub{ color:var(--text-dim); font-size:.9rem; margin-bottom:24px; }
+.pay-steps{ display:flex; flex-direction:column; gap:16px; margin-bottom:24px; }
+.pay-step{ display:flex; gap:14px; align-items:flex-start; }
+.pay-step-num{
+  flex-shrink:0; width:28px; height:28px; display:flex; align-items:center; justify-content:center;
+  background:rgba(46,230,214,.12); border:1px solid rgba(46,230,214,.3); color:var(--cyan);
+  border-radius:50%; font-family:var(--font-display); font-weight:700; font-size:.85rem;
+}
+.pay-step-text{ font-size:.92rem; color:var(--text); padding-top:3px; }
+.pay-methods{ background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-sm); padding:18px; margin-bottom:22px; }
+.pay-methods-title{ font-family:var(--font-mono); font-size:.74rem; color:var(--text-mute); text-transform:uppercase; letter-spacing:.1em; margin-bottom:14px; }
+.pay-method{ display:flex; align-items:center; justify-content:space-between; gap:12px; padding:11px 0; border-bottom:1px solid var(--border); }
+.pay-method:last-child{ border-bottom:none; }
+.pay-method-name{ display:flex; align-items:center; gap:9px; font-weight:600; font-size:.92rem; }
+.pay-method-type{ font-size:.74rem; color:var(--text-mute); font-weight:400; }
+.pay-method-ico{ font-size:1.1rem; }
+.pay-method-val{ display:flex; align-items:center; }
+.pay-method-num{ font-family:var(--font-mono); font-size:.92rem; color:var(--cyan); }
+.pay-copy{
+  background:transparent; border:1px solid var(--border-2); color:var(--text-dim);
+  font-family:var(--font-mono); font-size:.68rem; padding:3px 9px; border-radius:6px;
+  cursor:pointer; margin-left:8px; transition:all .15s;
+}
+.pay-copy:hover{ border-color:var(--cyan); color:var(--cyan); }
+.pay-copy.copied{ background:var(--cyan); color:#04201d; border-color:var(--cyan); }
+.btn-wa{
+  display:flex; align-items:center; justify-content:center; gap:10px; width:100%; padding:16px;
+  background:linear-gradient(135deg,#25d366,#1da851); color:#04250f;
+  font-family:var(--font-display); font-weight:700; font-size:1rem; border:none;
+  border-radius:var(--radius-sm); cursor:pointer; text-decoration:none;
+  transition:transform .15s,box-shadow .2s; box-shadow:0 8px 26px rgba(37,211,102,.3);
+}
+.btn-wa:hover{ transform:translateY(-2px); box-shadow:0 12px 34px rgba(37,211,102,.45); }
+.pay-foot{ text-align:center; color:var(--text-mute); font-size:.8rem; margin-top:16px; line-height:1.5; }

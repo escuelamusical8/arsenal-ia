@@ -10,12 +10,13 @@ const CONTENT = {
       catalog: "Catálogo",
       robots: "Robots IA",
       faq: "Preguntas",
-      cta: "Quiero acceso"
+      cta: "Quiero acceso",
+      login: "Ya compré · Entrar"
     },
     hero: {
       badge: "Actualizado 2026 · GPT-5, Claude, Gemini, Midjourney v7",
-      title: "Más de 10.500 prompts y 30 robots de IA listos para usar",
-      subtitle: "La biblioteca de prompts más completa en español. Copia, pega y obtén resultados profesionales en marketing, ventas, contenido, diseño y negocios. Sin rodeos, sin cursos eternos.",
+      title: "Más de 10.500 prompts, 30 robots y agentes de IA listos para usar",
+      subtitle: "El arsenal de IA más completo en español: prompts, robots y agentes listos para usar. Copia, pega y obtén resultados profesionales en marketing, ventas, contenido, diseño y negocios. Sin rodeos, sin cursos eternos.",
       ctaPrimary: "Conseguir acceso ahora",
       ctaSecondary: "Ver qué incluye",
       stat1num: "10.500+",
@@ -59,14 +60,15 @@ const CONTENT = {
       title: "Acceso completo, un solo pago",
       subtitle: "Sin suscripciones ni sorpresas. Pagas una vez y accedes a todo, para siempre.",
       badge: "Oferta de lanzamiento",
-      planName: "Pack Completo IA",
-      price: "$47.000",
-      priceOld: "$120.000",
-      currency: "COP",
+      planName: "Arsenal IA Completo",
+      price: "$80.000",
+      priceOld: "$160.000",
+      currency: "COP · ≈ 20 USD",
       priceNote: "Pago único · Acceso inmediato",
       features: [
         "Más de 10.500 prompts organizados",
         "Los 30 robots / GPTs especializados",
+        "Agentes de IA preconfigurados",
         "12 categorías de negocio y contenido",
         "Versión en español e inglés",
         "Actualizaciones gratuitas de por vida",
@@ -93,6 +95,22 @@ const CONTENT = {
       button: "Conseguir acceso completo",
       note: "Pago único · Acceso inmediato · Actualizaciones de por vida"
     },
+    pay: {
+      badge: "Oferta de lanzamiento",
+      title: "Arsenal IA Completo",
+      price: "$80.000",
+      currency: "COP · ≈ 20 USD",
+      sub: "Acceso total a +10.500 prompts, 30 robots y agentes. Pago único, acceso de por vida.",
+      step1: "Realiza el pago a cualquiera de las cuentas de abajo.",
+      step2: "Envíanos el comprobante por WhatsApp con el botón verde.",
+      step3: "Recibes tu clave de acceso y entras a ver todo el contenido.",
+      methodsTitle: "Métodos de pago",
+      savings: "(ahorros)",
+      copy: "copiar",
+      copied: "✓",
+      waButton: "Enviar comprobante por WhatsApp",
+      foot: "Te respondemos lo más rápido posible · Soporte 3189562677"
+    },
     footer: {
       rights: "Todos los derechos reservados.",
       support: "Soporte",
@@ -107,12 +125,13 @@ const CONTENT = {
       catalog: "Catalog",
       robots: "AI Robots",
       faq: "FAQ",
-      cta: "Get access"
+      cta: "Get access",
+      login: "Already bought · Enter"
     },
     hero: {
       badge: "Updated 2026 · GPT-5, Claude, Gemini, Midjourney v7",
-      title: "10,500+ ready-to-use AI prompts and 30 robots",
-      subtitle: "The most complete prompt library for creators and businesses. Copy, paste and get professional results in marketing, sales, content, design and more. No fluff, no endless courses.",
+      title: "10,500+ AI prompts, 30 robots and agents ready to use",
+      subtitle: "The most complete AI arsenal for creators and businesses: prompts, robots and agents ready to use. Copy, paste and get professional results in marketing, sales, content, design and more. No fluff, no endless courses.",
       ctaPrimary: "Get access now",
       ctaSecondary: "See what's inside",
       stat1num: "10,500+",
@@ -156,14 +175,15 @@ const CONTENT = {
       title: "Full access, one single payment",
       subtitle: "No subscriptions, no surprises. Pay once and access everything, forever.",
       badge: "Launch offer",
-      planName: "Complete AI Pack",
-      price: "$12",
-      priceOld: "$30",
+      planName: "Complete AI Arsenal",
+      price: "$20",
+      priceOld: "$40",
       currency: "USD",
       priceNote: "One-time payment · Instant access",
       features: [
         "10,500+ organized prompts",
         "All 30 specialized robots / GPTs",
+        "Pre-configured AI agents",
         "12 business and content categories",
         "Spanish and English versions",
         "Free lifetime updates",
@@ -190,6 +210,22 @@ const CONTENT = {
       button: "Get full access",
       note: "One-time payment · Instant access · Lifetime updates"
     },
+    pay: {
+      badge: "Launch offer",
+      title: "Complete AI Arsenal",
+      price: "$20",
+      currency: "USD",
+      sub: "Full access to 10,500+ prompts, 30 robots and agents. One-time payment, lifetime access.",
+      step1: "Make the payment to any of the accounts below.",
+      step2: "Send us the receipt on WhatsApp using the green button.",
+      step3: "You'll get your access key and enter to see all the content.",
+      methodsTitle: "Payment methods",
+      savings: "(savings)",
+      copy: "copy",
+      copied: "✓",
+      waButton: "Send receipt on WhatsApp",
+      foot: "We reply as fast as possible · Support 3189562677"
+    },
     footer: {
       rights: "All rights reserved.",
       support: "Support",
@@ -206,6 +242,20 @@ const CONTENT = {
 // ============================================================
 
 const CATEGORIES = [
+  {
+    id: "agents",
+    icon: "🤖",
+    count: 600,
+    name: { es: "IA y Agentes", en: "AI & Agents" },
+    desc: { es: "Crea tus propios GPTs, agentes y automatizaciones.", en: "Build your own GPTs, agents and automations." },
+    sample: {
+      title: { es: "Crea tu propio agente personalizado", en: "Build your own custom agent" },
+      prompt: {
+        es: "Actúa como experto en configuración de agentes de IA. Ayúdame a crear las instrucciones para un GPT/agente personalizado que se especialice en [TAREA]. Dame: el rol que debe asumir, su personalidad y tono, qué debe hacer paso a paso, qué información pedir al usuario, qué formato de respuesta usar y qué NO debe hacer. Listo para copiar y pegar en la configuración.",
+        en: "Act as an AI agent configuration expert. Help me create the instructions for a custom GPT/agent specialized in [TASK]. Give me: the role it should take, its personality and tone, what it should do step by step, what info to ask the user, what response format to use and what it should NOT do. Ready to copy and paste into the configuration."
+      }
+    }
+  },
   {
     id: "marketing",
     icon: "📣",

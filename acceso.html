@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arsenal IA — Biblioteca de prompts</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="portal.css" />
+</head>
+<body class="portal-body">
+
+  <!-- ============ PANTALLA DE CLAVE (GATE) ============ -->
+  <div class="gate" id="gate">
+    <div class="gate-bg"></div>
+    <div class="gate-card">
+      <div class="gate-lang" id="gateLang">
+        <button data-lang="es" class="active">ES</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <div class="gate-logo">
+        <span class="logo-bracket">[</span><span class="logo-text">ARSENAL</span><span class="logo-dot">.</span><span class="logo-ai">IA</span><span class="logo-bracket">]</span>
+      </div>
+      <h1 class="gate-title" data-pt="gateTitle"></h1>
+      <p class="gate-sub" data-pt="gateSub"></p>
+      <div class="gate-form">
+        <input type="password" id="gateInput" class="gate-input" autocomplete="off" />
+        <button id="gateButton" class="btn btn-primary btn-block btn-lg"></button>
+      </div>
+      <p class="gate-error" id="gateError"></p>
+      <div class="gate-foot">
+        <p><span data-pt="gateNoAccess"></span> <a href="index.html#pricing" data-pt="gateBuy"></a></p>
+        <p class="gate-help"><a href="https://wa.me/573189562677" target="_blank" rel="noopener" data-pt="gateHelp"></a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ BIBLIOTECA (oculta hasta ingresar) ============ -->
+  <div class="library" id="library" hidden>
+
+    <!-- Header del portal -->
+    <header class="portal-header">
+      <div class="portal-header-inner">
+        <a href="#" class="logo">
+          <span class="logo-bracket">[</span><span class="logo-text">ARSENAL</span><span class="logo-dot">.</span><span class="logo-ai">IA</span><span class="logo-bracket">]</span>
+        </a>
+        <div class="portal-actions">
+          <div class="lang-switch" id="libLang">
+            <button data-lang="es" class="active">ES</button>
+            <button data-lang="en">EN</button>
+          </div>
+          <a href="index.html" class="portal-link" id="backToSite"></a>
+          <button class="portal-link portal-logout" id="logoutBtn"></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Bienvenida -->
+    <section class="portal-welcome">
+      <div class="portal-container">
+        <h2 id="welcomeTitle"></h2>
+        <p id="welcomeSub"></p>
+      </div>
+    </section>
+
+    <!-- Buscador + filtros -->
+    <section class="portal-controls">
+      <div class="portal-container">
+        <div class="search-box">
+          <span class="search-icon">⌕</span>
+          <input type="text" id="searchInput" class="search-input" />
+        </div>
+        <div class="cat-filters" id="catFilters"></div>
+        <p class="results-count" id="resultsCount"></p>
+      </div>
+    </section>
+
+    <!-- Grid de prompts -->
+    <section class="portal-prompts">
+      <div class="portal-container">
+        <div class="prompts-grid" id="promptsGrid"></div>
+        <p class="no-results" id="noResults" hidden></p>
+      </div>
+    </section>
+
+    <footer class="portal-footer">
+      <div class="portal-container">
+        <span>© <span id="year"></span> Arsenal IA — Centro IA</span>
+      </div>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="prompts-1.js"></script>
+  <script src="prompts-2.js"></script>
+  <script src="prompts-3.js"></script>
+  <script src="library-config.js"></script>
+  <script src="portal.js"></script>
+</body>
+</html>
