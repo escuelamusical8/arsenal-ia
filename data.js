@@ -15,6 +15,7 @@ const CONTENT = {
     },
     hero: {
       badge: "Actualizado 2026 · GPT-5, Claude, Gemini, Midjourney v7",
+      growthNote: "📈 Biblioteca en crecimiento constante: agregamos nuevos prompts cada semana. Compras una vez y recibes todas las actualizaciones gratis.",
       title: "Arsenal IA: tu biblioteca completa de prompts, robots y agentes",
       subtitle: "Todo lo que necesitas para sacarle el máximo provecho a la inteligencia artificial, organizado y en un solo lugar. Copia, ajusta y obtén resultados profesionales en tu negocio, contenido, estudios y más. En español e inglés.",
       ctaPrimary: "Conseguir acceso ahora",
@@ -41,7 +42,7 @@ const CONTENT = {
         { icon: "🤖", title: "30 robots especializados", text: "Asistentes de IA preconfigurados para tareas específicas: cierre de ventas, creación de embudos, guiones, ideas virales." },
         { icon: "🌎", title: "Pensado para Latinoamérica", text: "Prompts adaptados al mercado hispano, con ejemplos reales de negocios locales y lenguaje cercano." },
         { icon: "📲", title: "Acceso desde cualquier dispositivo", text: "Funciona en PC, tablet y celular. Lleva tu biblioteca de prompts contigo a donde vayas." },
-        { icon: "🔄", title: "Actualizaciones de por vida", text: "La IA cambia rápido. Recibes nuevos prompts y robots sin pagar de nuevo, a medida que salen modelos nuevos." }
+        { icon: "🔄", title: "Biblioteca en crecimiento", text: "Subimos nuevos prompts cada semana hasta superar los 10.000. Compras una vez y recibes todas las actualizaciones gratis, de por vida." }
       ]
     },
     catalog: {
@@ -84,7 +85,7 @@ const CONTENT = {
         { q: "¿Cómo recibo el acceso después de pagar?", a: "Inmediatamente después de tu compra recibes el enlace de acceso al portal con todos los prompts y robots. Si tienes cualquier inconveniente, escríbenos por WhatsApp y lo resolvemos al instante." },
         { q: "¿Necesito saber de tecnología o programación?", a: "Para nada. Si sabes copiar y pegar, sabes usar estos prompts. Cada uno viene listo: solo lo pegas en ChatGPT, Claude o tu IA favorita y obtienes el resultado." },
         { q: "¿Funciona con la versión gratuita de ChatGPT?", a: "Sí. Los prompts funcionan tanto en versiones gratuitas como de pago de ChatGPT, Claude, Gemini y otras. Algunos robots avanzados rinden mejor en las versiones pro, pero todos son utilizables gratis." },
-        { q: "¿Los prompts están actualizados?", a: "Sí. Esta es la versión 2026, optimizada para los modelos más nuevos como GPT-5, Claude, Gemini y Midjourney v7. Además recibes actualizaciones de por vida sin costo adicional." },
+        { q: "¿Los prompts están actualizados y cuántos hay?", a: "Arsenal IA es una biblioteca en crecimiento constante: agregamos nuevos prompts cada semana en camino a superar los 10.000. Al comprar accedes a toda la colección disponible hoy y recibes cada actualización gratis, de por vida, sin pagar de nuevo. Todo optimizado para los modelos más nuevos como GPT-5, Claude y Gemini." },
         { q: "¿Sirve para mi tipo de negocio?", a: "Hay prompts para emprendedores, freelancers, dueños de tiendas, creadores de contenido, agencias y más. Si vendes algo o creas contenido, te va a servir." },
         { q: "¿Puedo usarlos en español y en inglés?", a: "Sí. El portal completo está disponible en ambos idiomas y muchos prompts incluyen las dos versiones para que trabajes en el mercado que quieras." }
       ]
@@ -130,6 +131,7 @@ const CONTENT = {
     },
     hero: {
       badge: "Updated 2026 · GPT-5, Claude, Gemini, Midjourney v7",
+      growthNote: "📈 Constantly growing library: we add new prompts every week. Buy once and get all updates free.",
       title: "Arsenal IA: your complete library of AI prompts, robots and agents",
       subtitle: "Everything you need to get the most out of artificial intelligence, organized and in one place. Copy, adjust and get professional results for your business, content, studies and more. In Spanish and English.",
       ctaPrimary: "Get access now",
@@ -156,7 +158,7 @@ const CONTENT = {
         { icon: "🤖", title: "30 specialized robots", text: "Pre-built AI assistants for specific tasks: sales closing, funnel building, scripts, viral content ideas." },
         { icon: "🌎", title: "Built for real business", text: "Prompts adapted to real markets, with practical examples for local businesses and natural language." },
         { icon: "📲", title: "Access from any device", text: "Works on desktop, tablet and phone. Take your prompt library with you wherever you go." },
-        { icon: "🔄", title: "Lifetime updates", text: "AI changes fast. You get new prompts and robots at no extra cost as new models are released." }
+        { icon: "🔄", title: "Growing library", text: "We add new prompts every week on the way to 10,000+. Buy once and get all updates free, for life." }
       ]
     },
     catalog: {
@@ -199,7 +201,7 @@ const CONTENT = {
         { q: "How do I get access after paying?", a: "Right after your purchase you receive the access link to the portal with all the prompts and robots. If you run into any issue, message us on WhatsApp and we'll fix it instantly." },
         { q: "Do I need any tech or coding knowledge?", a: "Not at all. If you can copy and paste, you can use these prompts. Each one comes ready: just paste it into ChatGPT, Claude or your favorite AI and get the result." },
         { q: "Does it work with the free version of ChatGPT?", a: "Yes. The prompts work on both free and paid versions of ChatGPT, Claude, Gemini and others. Some advanced robots perform better on pro versions, but all are usable for free." },
-        { q: "Are the prompts up to date?", a: "Yes. This is the 2026 version, optimized for the newest models like GPT-5, Claude, Gemini and Midjourney v7. You also get lifetime updates at no extra cost." },
+        { q: "Are the prompts up to date and how many are there?", a: "Arsenal IA is a constantly growing library: we add new prompts every week on the way to 10,000+. When you buy, you access the full collection available today and get every update free, for life, with no extra payment. All optimized for the newest models like GPT-5, Claude and Gemini." },
         { q: "Will it work for my type of business?", a: "There are prompts for entrepreneurs, freelancers, shop owners, content creators, agencies and more. If you sell something or create content, it'll work for you." },
         { q: "Can I use them in both Spanish and English?", a: "Yes. The whole portal is available in both languages and many prompts include both versions so you can work in whichever market you want." }
       ]
