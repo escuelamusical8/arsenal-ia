@@ -3,13 +3,9 @@
 // =========================================================
 
 // ---- CONFIGURACIÓN ----
-// Tu WhatsApp Business (sin +, sin espacios). Aquí te llega el comprobante.
-const WHATSAPP = "573112541324";
-// Mensaje que se escribe solo cuando el cliente toca el botón verde.
-const WA_MSG = {
-  es: "Hola, acabo de pagar el Arsenal IA (20 USD / $80.000 COP). Aquí está mi comprobante:",
-  en: "Hi, I just paid for the AI Arsenal (20 USD). Here's my receipt:"
-};
+// Enlace de pago de Hotmart (checkout directo).
+// El cliente da clic en "Quiero acceso" y va directo a pagar aquí.
+const HOTMART_URL = "https://pay.hotmart.com/W106478848S";
 // -----------------------------------------------------------------
 
 let currentLang = localStorage.getItem('lang') || 'es';
@@ -167,63 +163,27 @@ function setLang(lang){
   renderRobots();
   renderPriceFeatures();
   renderFaq();
-  if (typeof updateWhatsappLink === 'function') updateWhatsappLink();
-  // actualizar textos de los botones copiar del modal
-  document.querySelectorAll('.pay-copy').forEach(b => {
-    if (!b.classList.contains('copied')) b.textContent = CONTENT[currentLang].pay.copy;
-  });
 }
 
-// Abre/cierra la ventana de pago y conecta los botones
+// Conecta todos los botones de compra al checkout de Hotmart
 function wirePayModal(){
-  const overlay = document.getElementById('payOverlay');
-  const openBtns = ['buyButton', 'buyButton2', 'stickyCta'];
-
-  // Botones que abren el modal (incluye el botón "Quiero acceso" del header y hero)
-  document.querySelectorAll('a[data-i18n="nav.cta"], a[data-i18n="hero.ctaPrimary"], a[data-i18n="pricing.cta"], a[data-i18n="finalCta.button"]').forEach(el => {
-    el.addEventListener('click', (e) => { e.preventDefault(); openPay(); });
+  // Todos los botones/enlaces de compra llevan directo a pagar en Hotmart
+  const selectors = 'a[data-i18n="nav.cta"], a[data-i18n="hero.ctaPrimary"], a[data-i18n="pricing.cta"], a[data-i18n="finalCta.button"]';
+  document.querySelectorAll(selectors).forEach(el => {
+    el.href = HOTMART_URL;
+    el.target = "_blank";
+    el.rel = "noopener";
+    el.removeAttribute('data-open-modal');
   });
-  openBtns.forEach(id => {
+  ['buyButton', 'buyButton2', 'stickyCta'].forEach(id => {
     const el = document.getElementById(id);
-    if (el) el.addEventListener('click', (e) => { e.preventDefault(); openPay(); });
-  });
-
-  // Cerrar
-  document.getElementById('payClose').addEventListener('click', closePay);
-  overlay.addEventListener('click', (e) => { if (e.target === overlay) closePay(); });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closePay(); });
-
-  // Botón de WhatsApp con mensaje
-  updateWhatsappLink();
-
-  // Botones copiar de cada método
-  overlay.querySelectorAll('.pay-copy').forEach(btn => {
-    btn.textContent = CONTENT[currentLang].pay.copy;
-    btn.addEventListener('click', () => {
-      navigator.clipboard.writeText(btn.getAttribute('data-copy')).then(() => {
-        const orig = CONTENT[currentLang].pay.copy;
-        btn.textContent = CONTENT[currentLang].pay.copied;
-        btn.classList.add('copied');
-        setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 1400);
-      });
-    });
+    if (el){ el.href = HOTMART_URL; el.target = "_blank"; el.rel = "noopener"; }
   });
 }
 
+// Abre el checkout de Hotmart (usado por los botones de "desbloquear categoría")
 function openPay(){
-  document.getElementById('payOverlay').hidden = false;
-  document.body.style.overflow = 'hidden';
-}
-function closePay(){
-  document.getElementById('payOverlay').hidden = true;
-  document.body.style.overflow = '';
-}
-function updateWhatsappLink(){
-  const wa = document.getElementById('payWhatsapp');
-  if (wa){
-    const msg = encodeURIComponent(WA_MSG[currentLang]);
-    wa.href = `https://wa.me/${WHATSAPP}?text=${msg}`;
-  }
+  window.open(HOTMART_URL, '_blank', 'noopener');
 }
 
 // Menú móvil
