@@ -15,7 +15,7 @@ const CONTENT = {
     },
     hero: {
       badge: "Actualizado 2026 · GPT-5, Claude, Gemini, Midjourney v7",
-      growthNote: "📈 Biblioteca en constante crecimiento. Cada semana añadimos nuevos prompts, robots y recursos para que siempre tengas contenido actualizado. Precio especial de lanzamiento: este valor puede aumentar para nuevos miembros a medida que Arsenal IA siga creciendo.",
+      growthNote: "📈 Biblioteca en constante crecimiento. Cada semana añadimos nuevos prompts, robots y recursos para que siempre tengas contenido actualizado. Precio especial de lanzamiento. A medida que Arsenal IA siga creciendo, el valor para nuevos miembros aumentará.",
       title: "Arsenal IA: tu biblioteca completa de prompts, robots y agentes",
       subtitle: "Todo lo que necesitas para sacarle el máximo provecho a la inteligencia artificial, organizado y en un solo lugar. Copia, ajusta y obtén resultados profesionales en tu negocio, contenido, estudios y más. En español e inglés.",
       ctaPrimary: "Conseguir acceso ahora",
@@ -58,8 +58,8 @@ const CONTENT = {
       useLabel: "Para qué sirve"
     },
     pricing: {
-      title: "Acceso completo, un solo pago",
-      subtitle: "Sin suscripciones ni sorpresas. Pagas una vez y accedes a todo, para siempre.",
+      title: "Pago único. Sin mensualidades ni renovaciones.",
+      subtitle: "Los miembros que ingresen durante esta etapa conservarán el acceso y recibirán todas las futuras actualizaciones sin costo adicional.",
       badge: "Oferta de lanzamiento",
       planName: "Arsenal IA Completo",
       price: "$80.000",
@@ -72,12 +72,15 @@ const CONTENT = {
         "Agentes de IA preconfigurados",
         "15 categorías de negocio y contenido",
         "Versión en español e inglés",
-        "Acceso vitalicio (oferta de lanzamiento)",
+        "Miembros fundadores: acceso vitalicio incluido",
         "Acceso desde PC, tablet y celular",
         "Soporte directo por WhatsApp"
       ],
       cta: "Quiero mi acceso ahora",
-      guarantee: "Garantía de satisfacción · Soporte incluido"
+      guarantee: "Garantía de satisfacción · Soporte incluido",
+      trust1: "🔒 Pago seguro mediante Hotmart",
+      trust2: "✅ Acceso inmediato después del pago",
+      trust3: "💬 Soporte por WhatsApp"
     },
     faq: {
       title: "Preguntas frecuentes",
@@ -132,7 +135,7 @@ const CONTENT = {
     },
     hero: {
       badge: "Updated 2026 · GPT-5, Claude, Gemini, Midjourney v7",
-      growthNote: "📈 A constantly growing library. Every week we add new prompts, robots and resources so you always have updated content. Special launch price: this value may increase for new members as Arsenal IA keeps growing.",
+      growthNote: "📈 A constantly growing library. Every week we add new prompts, robots and resources so you always have updated content. Special launch price. As Arsenal IA keeps growing, the value for new members will increase.",
       title: "Arsenal IA: your complete library of AI prompts, robots and agents",
       subtitle: "Everything you need to get the most out of artificial intelligence, organized and in one place. Copy, adjust and get professional results for your business, content, studies and more. In Spanish and English.",
       ctaPrimary: "Get access now",
@@ -175,8 +178,8 @@ const CONTENT = {
       useLabel: "What it does"
     },
     pricing: {
-      title: "Full access, one single payment",
-      subtitle: "No subscriptions, no surprises. Pay once and access everything, forever.",
+      title: "One-time payment. No monthly fees or renewals.",
+      subtitle: "Members who join during this stage will keep access and receive all future updates at no extra cost.",
       badge: "Launch offer",
       planName: "Complete AI Arsenal",
       price: "$20",
@@ -189,12 +192,15 @@ const CONTENT = {
         "Pre-configured AI agents",
         "15 business and content categories",
         "Spanish and English versions",
-        "Lifetime access (launch offer)",
+        "Founding members: lifetime access included",
         "Access from desktop, tablet and phone",
         "Direct WhatsApp support"
       ],
       cta: "Get my access now",
-      guarantee: "Satisfaction guarantee · Support included"
+      guarantee: "Satisfaction guarantee · Support included",
+      trust1: "🔒 Secure payment via Hotmart",
+      trust2: "✅ Instant access after payment",
+      trust3: "💬 WhatsApp support"
     },
     faq: {
       title: "Frequently asked questions",
