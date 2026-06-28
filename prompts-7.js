@@ -52,7 +52,7 @@ const PROMPTS_7 = [
      en:"You're a sales expert. A customer decided not to buy [PRODUCT] or went with the competition. Give me strategies and messages to try to win them back elegantly: how to reopen the conversation, what to offer for them to reconsider, how to understand what stopped them and how to leave the door open without begging. With examples of respectful messages."}},
 
 // ---------- REDES SOCIALES (+5) ----------
-{ cat:"social", t:{es:"Caption que genera comentarios", en:"Caption that drives comments"},
+{ cat:"social", t:{es:"Pie de foto que invita a comentar", en:"Caption that invites comments"},
   p:{es:"Actúa como experto en engagement. Escribe 8 captions para publicaciones de [NICHO] que inviten a la gente a comentar e interactuar. Que terminen con una pregunta o invitación que genere conversación. Varía los temas y enfoques. Que aumenten el alcance al provocar respuestas. Adaptados a un tono cercano para [PÚBLICO]. Marca los 3 que más interacción generarían.",
      en:"Act as an engagement expert. Write 8 captions for [NICHE] posts that invite people to comment and interact. They should end with a question or invitation that sparks conversation. Vary the topics and approaches. They should increase reach by prompting replies. Adapted to a warm tone for [AUDIENCE]. Mark the 3 that would generate the most interaction."}},
 

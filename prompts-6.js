@@ -126,7 +126,7 @@ const PROMPTS_6 = [
   p:{es:"Actúa como experto en e-commerce. Escribe la ficha completa de producto para [PRODUCTO] en una tienda online. Incluye: un título optimizado, una descripción persuasiva enfocada en beneficios, las características clave en viñetas, qué incluye, y por qué comprarlo. Que convenza al cliente y resuelva sus dudas antes de comprar.",
      en:"Act as an e-commerce expert. Write the complete product page for [PRODUCT] in an online store. Include: an optimized title, a persuasive description focused on benefits, the key features in bullets, what's included, and why to buy it. It should convince the customer and resolve their doubts before buying."}},
 
-{ cat:"ecommerce", t:{es:"Recupera carritos abandonados", en:"Recover abandoned carts"},
+{ cat:"ecommerce", t:{es:"Secuencia para recuperar carritos", en:"Sequence to recover carts"},
   p:{es:"Eres experto en conversión de tiendas online. Crea una secuencia de 3 mensajes para recuperar clientes que dejaron productos en el carrito sin comprar. Mensaje 1: recordatorio amable. Mensaje 2: resolver dudas o dar confianza. Mensaje 3: incentivo final con urgencia. Para email o WhatsApp, listos para usar y personalizar.",
      en:"You're an online store conversion expert. Create a sequence of 3 messages to recover customers who left products in the cart without buying. Message 1: friendly reminder. Message 2: resolve doubts or build trust. Message 3: final incentive with urgency. For email or WhatsApp, ready to use and personalize."}},
 
@@ -196,7 +196,7 @@ const PROMPTS_6 = [
   p:{es:"Eres experto en SEO de contenidos. Dame la estructura completa de un artículo de blog optimizado sobre [TEMA] para la palabra clave [PALABRA CLAVE]. Incluye: el título con la keyword, la meta descripción, los subtítulos (H2, H3) organizados, qué cubrir en cada sección y dónde colocar la palabra clave de forma natural. Listo para redactar.",
      en:"You're a content SEO expert. Give me the complete structure of an SEO-optimized blog article about [TOPIC] for the keyword [KEYWORD]. Include: the title with the keyword, the meta description, the subheadings (H2, H3) organized, what to cover in each section and where to place the keyword naturally. Ready to write."}},
 
-{ cat:"seo", t:{es:"Meta título y descripción", en:"Meta title and description"},
+{ cat:"seo", t:{es:"Meta etiquetas optimizadas", en:"Optimized meta tags"},
   p:{es:"Actúa como experto en SEO. Para una página sobre [TEMA/PRODUCTO] con la palabra clave [KEYWORD], escríbeme 5 opciones de meta título (máximo 60 caracteres) y 5 de meta descripción (máximo 155 caracteres) optimizadas para que la gente haga clic desde Google. Que incluyan la keyword y un gancho. Marca las mejores.",
      en:"Act as an SEO expert. For a page about [TOPIC/PRODUCT] with the keyword [KEYWORD], write me 5 meta title options (max 60 characters) and 5 meta description options (max 155 characters) optimized to make people click from Google. They should include the keyword and a hook. Mark the best ones."}},
 
