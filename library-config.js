@@ -35,7 +35,10 @@ const ALL_PROMPTS = [].concat(
   typeof PROMPTS_8 !== "undefined" ? PROMPTS_8 : [],
   typeof PROMPTS_9 !== "undefined" ? PROMPTS_9 : [],
   typeof PROMPTS_10 !== "undefined" ? PROMPTS_10 : [],
-  typeof PROMPTS_11 !== "undefined" ? PROMPTS_11 : []
+  typeof PROMPTS_11 !== "undefined" ? PROMPTS_11 : [],
+  typeof PROMPTS_12 !== "undefined" ? PROMPTS_12 : [],
+  typeof PROMPTS_13 !== "undefined" ? PROMPTS_13 : [],
+  typeof PROMPTS_14 !== "undefined" ? PROMPTS_14 : []
 );
 
 // ---- Textos del portal de acceso (bilingüe) ----
